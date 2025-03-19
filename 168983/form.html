@@ -1,0 +1,32 @@
+<form id="report-form" method="post" action="/report" enctype="multipart/form-data">
+    <input type="hidden" name="nonce" value="nui5Jah1ia7iash0ahw7Eedaes0EhaoS3eiqu9Igha">
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name*</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Contact Phone*</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Event Description*</label>
+        <textarea class="form-control" id="description" name="description" rows="4"
+            placeholder="Describe your event"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="media" class="form-label">Media Files (Images/Videos)*</label>
+        <input class="form-control" type="file" id="media" name="media" multiple accept="image/*,video/*">
+        <div class="form-text">You can select multiple files.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="employee-id" class="form-label">Employee ID (Optional)</label>
+        <input type="text" class="form-control" id="employee-id" name="media"
+            placeholder="Enter your employee ID if applicable">
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Report Incident</button>
+</form>
